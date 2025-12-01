@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='drone_model'>
+    <pose>0 0 0.5 0 0 0</pose>
+    <link name='base_link'>
+      <inertial>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <visual name='visual'>
+        <geometry>
+          <box>
+            <size>0.2 0.2 0.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0 0 1</ambient>
+          <diffuse>0.8 0 0 1</diffuse>
+        </material>
+      </visual>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>0.2 0.2 0.1</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <static>false</static>
+  </model>
+</sdf>

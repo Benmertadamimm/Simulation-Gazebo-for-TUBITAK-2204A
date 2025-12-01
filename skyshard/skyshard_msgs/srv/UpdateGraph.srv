@@ -1,0 +1,9 @@
+# skyshard_msgs/srv/UpdateGraph.srv
+# Router'a Graph'ı yeniden hesaplaması/güncellemesi gerektiğini bildirir.
+
+int32 scenario_type              # 1: Main Drone Fail, 2: Link Fail, 3: Route Recomputation
+int32[] failed_drone_ids         # Başarısız olan drone ID'leri (Main Drone Fail için)
+int32[] failed_link_pair         # Kopan link çifti [ID1, ID2]
+---
+bool success                     # İşlem başarılı ise True
+string message                   # Başarı veya hata mesajı

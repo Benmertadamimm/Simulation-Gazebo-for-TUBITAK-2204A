@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <world name="skyshard_city_world">
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <name>building_1</name>
+      <uri>model://building</uri>
+      <pose>20 20 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>building_2</name>
+      <uri>model://building</uri>
+      <pose>-20 -20 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>building_3</name>
+      <uri>model://construction_site</uri>
+      <pose>0 -30 0 0 0 0</pose>
+    </include>
+
+    <physics name="default_physics" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    
+  </world>
+</sdf>
